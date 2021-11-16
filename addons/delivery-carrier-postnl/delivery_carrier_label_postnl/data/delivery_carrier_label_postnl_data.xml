@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <data noupdate="1">
+    <record id="product_product_delivery_postnl_pakket_2" model="product.product">
+      <field name="name">PostNL Brievenbuspakje</field>
+      <field name="default_code">Delivery_007</field>
+      <field name="type">service</field>
+      <field name="categ_id" ref="delivery.product_category_deliveries"/>
+      <field name="sale_ok" eval="False"/>
+      <field name="purchase_ok" eval="False"/>
+      <field name="list_price">4.1</field>
+    </record>
+    <record id="product_product_delivery_postnl_pakket_10" model="product.product">
+      <field name="name">PostNL Pakket 0-10</field>
+      <field name="default_code">Delivery_008</field>
+      <field name="type">service</field>
+      <field name="categ_id" ref="delivery.product_category_deliveries"/>
+      <field name="sale_ok" eval="False"/>
+      <field name="purchase_ok" eval="False"/>
+      <field name="list_price">6.75</field>
+    </record>
+    <record id="product_product_delivery_postnl_pakket_23" model="product.product">
+      <field name="name">PostNL Pakket 10-23</field>
+      <field name="default_code">Delivery_009</field>
+      <field name="type">service</field>
+      <field name="categ_id" ref="delivery.product_category_deliveries"/>
+      <field name="sale_ok" eval="False"/>
+      <field name="purchase_ok" eval="False"/>
+      <field name="list_price">13</field>
+    </record>
+    <record id="delivery_carrier_postnl_pakket" model="delivery.carrier">
+      <field name="name">PostNL</field>
+      <field name="code">postnl</field>
+      <field name="product_id" ref="delivery_carrier_label_postnl.product_product_delivery_postnl_pakket_23"/>
+      <field name="delivery_type">postnl</field>
+      <field name="integration_level">rate_and_ship</field>
+      <field name="country_ids" eval="[(6, 0, [ref('base.nl')])]"/>
+      <field name="postnl_api_key">99999</field>
+      <field name="postnl_customer_code">1234</field>
+      <field name="postnl_customer_number">12345678</field>
+    </record>
+  </data>
+</odoo>

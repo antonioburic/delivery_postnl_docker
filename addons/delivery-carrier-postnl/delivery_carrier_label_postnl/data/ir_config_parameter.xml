@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ir_config_param_postnl_tracking_url" model="ir.config_parameter">
+            <field name="key">postnl_tracking_base_url</field>
+            <field name="value">https://jouw.postnl.nl/track-and-trace</field>
+        </record>
+        <record id="ir_config_param_postnl_shipping_prod_url" model="ir.config_parameter">
+            <field name="key">postnl_shipping_api_prod_url</field>
+            <field name="value">https://api.postnl.nl/v1/shipment</field>
+        </record>
+        <record id="ir_config_param_postnl_shipping_test_url" model="ir.config_parameter">
+            <field name="key">postnl_shipping_api_test_url</field>
+            <field name="value">https://api-sandbox.postnl.nl/v1/shipment</field>
+        </record>
+    </data>
+</odoo>
