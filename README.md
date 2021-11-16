@@ -7,4 +7,4 @@ Run with:
 docker-compose up
 ```
 
-![Diagram: PostNL](./postnl.png)
+![Diagram: PostNL](./delivery_postnl.png)
